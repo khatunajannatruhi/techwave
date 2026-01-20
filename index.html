@@ -11,6 +11,84 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+  <body class="min-h-screen bg-[#07061A] text-white">
+    <!-- Navbar -->
+    <header class="relative z-30">
+      <div class="mx-auto max-w-[1200px] px-4">
+        <nav class="relative flex h-[80px] items-center justify-between">
+          <a href="#" class="text-2xl font-extrabold tracking-tight">
+            <span class="text-white">Tech</span><span class="text-fuchsia-500">Wave</span>
+          </a>
+
+          <ul class="hidden items-center gap-10 text-sm font-medium text-white/80 min-[992px]:flex">
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#episodes" class="hover:text-white">Episodes</a></li>
+            <li><a href="#host" class="hover:text-white">Host</a></li>
+          </ul>
+
+          <a
+            href="#subscribe"
+            class="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#FFC15A] via-[#FF3DCE] to-[#7C3AED] px-5 py-2.5 text-sm font-semibold text-[#140A1C] shadow-[0_12px_34px_rgba(255,61,206,0.22)] hover:brightness-110 min-[992px]:inline-flex"
+          >
+            Subscribe
+            <img src="./assets/ArrowRight.png" alt="" class="h-4 w-4" />
+          </a>
+
+          <input id="nav-toggle" type="checkbox" class="peer sr-only" />
+
+          <label
+            for="nav-toggle"
+            class="inline-flex cursor-pointer items-center justify-center rounded-xl p-2 min-[992px]:hidden"
+            aria-label="Open menu"
+          >
+            <img src="./assets/hamburger-menu.png" alt="Menu" class="h-6 w-6" />
+          </label>
+
+          <label
+            for="nav-toggle"
+            class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition peer-checked:pointer-events-auto peer-checked:opacity-100 min-[992px]:hidden"
+            aria-label="Close menu"
+          ></label>
+
+          <div
+            class="pointer-events-none absolute left-0 right-0 top-[80px] z-50 origin-top scale-95 opacity-0 transition
+                   peer-checked:pointer-events-auto peer-checked:scale-100 peer-checked:opacity-100
+                   min-[992px]:hidden"
+          >
+            <div class="rounded-2xl border border-white/10 bg-[#0B0A1E]/95 p-4 shadow-[0_18px_60px_rgba(0,0,0,0.45)] backdrop-blur">
+              <ul class="flex flex-col gap-2 text-sm font-medium text-white/85">
+                <li>
+                  <a href="#about" class="block rounded-xl px-4 py-3 hover:bg-white/5">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#episodes" class="block rounded-xl px-4 py-3 hover:bg-white/5">
+                    Episodes
+                  </a>
+                </li>
+                <li>
+                  <a href="#host" class="block rounded-xl px-4 py-3 hover:bg-white/5">
+                    Host
+                  </a>
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <a
+                  href="#subscribe"
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFC15A] via-[#FF3DCE] to-[#7C3AED] px-5 py-3 text-sm font-semibold text-[#140A1C] shadow-[0_12px_34px_rgba(255,61,206,0.22)] hover:brightness-110"
+                >
+                  Subscribe
+                  <img src="./assets/ArrowRight.png" alt="" class="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
 </body>
 </html>
